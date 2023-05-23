@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;700&display=swap");
 *,
 *::before,
 *::after {
@@ -15,12 +18,26 @@ li {
 }
 
 body {
-  font-family: Montserrat, sans-serif;
-  margin: 0 20rem; /* Adjust the margin value as per your preference */
+  /* font-family: "Roboto", sans-serif; */
+  font-family: "Roboto Mono", monospace;
+  /* font-family: "Arimo", sans-serif; */
+  padding: 0 20rem; /* Adjust the padding value as per your preference */
+  background-color: black;
+  color: white;
+}
+
+.container {
+  margin: 0 auto; /* Center the container horizontally */
+  max-width: 100%; /* Set the maximum width to prevent overflow */
 }
 
 .nav {
-  box-shadow: 0 0 10px #e1e5ee;
+  /* box-shadow: 0 0 10px #e1e5ee; */
+  background-color: #0006;
+  width: 100%;
+  /* Pay special attention here! */
+  position: sticky;
+  top: 0px;
 }
 
 .nav-list {
@@ -28,75 +45,59 @@ body {
   justify-content: flex-start;
   align-items: center;
   gap: 2rem;
-  margin: 0 2rem;
-  padding: 1.5rem 0rem;
+  padding: 1rem 0rem;
 }
 
-.nav-list-logo {
+.nav-list-item {
   cursor: pointer;
+  display: flex;
+  align-items: center;
 }
-.nav-list-logo img {
-  width: 50px; /* Adjust the width value as per your preference */
+
+.nav-list-item img {
+  width: 3rem; /* Adjust the width value as per your preference */
   height: auto;
   border-radius: 50%; /* Apply border-radius to make it circular */
   object-fit: cover; /* Ensure the image covers the entire circular area */
 }
-.nav-list-item {
-  list-style: none;
-  font-weight: bold;
-  position: relative;
-  padding: 1.5rem 1rem;
-  cursor: pointer;
+
+.header {
+  padding: 4rem 0 4rem 0;
+}
+.header h2 {
+  font-size: 1.4rem;
+}
+.header h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.25;
+}
+.header span {
+  color: rgb(170, 170, 170);
+  font-weight: 500;
+}
+.header a {
+  color: white;
 }
 
-/* .nav-list-item::after {
-  content: "";
-  width: 0;
-  height: 0.3rem;
-  border-radius: 0.2rem;
-  position: absolute;
-  left: 1rem;
-  bottom: 0.8rem;
-  background-color: #f06292;
-  transition: width 200ms ease-in;
-}
-
-.nav-list-item:hover::after,
-.nav-list-item:focus::after {
-  width: 80%;
-}
-
-.nav-list-item:hover ul,
-.nav-list-item:focus ul {
-  opacity: 1;
-  visibility: visible;
-}
-
-.nav-list-itemdrop {
-  position: absolute;
-  top: 4rem;
-  left: -1rem;
-  box-shadow: 0 0 10px #e1e5ee;
-  background-color: white;
-  border-radius: 0.2rem;
-  width: 12rem;
-  padding: 1rem;
+.flex {
   display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 200ms ease-in-out;
+  align-items: center; /* Add this to vertically center the content */
+  gap: 12rem;
+  margin: 2rem 0;
 }
-
-.nav-list-itemdrop li {
-  list-style: none;
-  padding: 0.5rem 1rem;
-  border-radius: 0.2rem;
-  transition: background-color 200ms ease-in-out;
+.flex .flex-text p {
+  margin: 3rem 0;
+  font-size: 1.1rem;
+  line-height: 1.625;
+  color: rgb(170, 170, 170);
 }
-
-.nav-list-itemdrop li:hover,
-.nav-list-itemdrop li:focus {
-  background-color: #fce4ec;
-} */
+.flex .flex-text span {
+  font-weight: 700;
+  color: white;
+}
+.flex .flex-image img {
+  max-width: 100%; /* Set the maximum width to ensure the image fits within the container */
+  border-radius: 10%; /* Apply border-radius to make it circular */
+  object-fit: cover; /* Ensure the image covers the entire circular area */
+}
