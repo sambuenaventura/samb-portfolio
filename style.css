@@ -1,0 +1,102 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  font-family: Montserrat, sans-serif;
+  margin: 0 20rem; /* Adjust the margin value as per your preference */
+}
+
+.nav {
+  box-shadow: 0 0 10px #e1e5ee;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+  margin: 0 2rem;
+  padding: 1.5rem 0rem;
+}
+
+.nav-list-logo {
+  cursor: pointer;
+}
+.nav-list-logo img {
+  width: 50px; /* Adjust the width value as per your preference */
+  height: auto;
+  border-radius: 50%; /* Apply border-radius to make it circular */
+  object-fit: cover; /* Ensure the image covers the entire circular area */
+}
+.nav-list-item {
+  list-style: none;
+  font-weight: bold;
+  position: relative;
+  padding: 1.5rem 1rem;
+  cursor: pointer;
+}
+
+/* .nav-list-item::after {
+  content: "";
+  width: 0;
+  height: 0.3rem;
+  border-radius: 0.2rem;
+  position: absolute;
+  left: 1rem;
+  bottom: 0.8rem;
+  background-color: #f06292;
+  transition: width 200ms ease-in;
+}
+
+.nav-list-item:hover::after,
+.nav-list-item:focus::after {
+  width: 80%;
+}
+
+.nav-list-item:hover ul,
+.nav-list-item:focus ul {
+  opacity: 1;
+  visibility: visible;
+}
+
+.nav-list-itemdrop {
+  position: absolute;
+  top: 4rem;
+  left: -1rem;
+  box-shadow: 0 0 10px #e1e5ee;
+  background-color: white;
+  border-radius: 0.2rem;
+  width: 12rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 200ms ease-in-out;
+}
+
+.nav-list-itemdrop li {
+  list-style: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.2rem;
+  transition: background-color 200ms ease-in-out;
+}
+
+.nav-list-itemdrop li:hover,
+.nav-list-itemdrop li:focus {
+  background-color: #fce4ec;
+} */
