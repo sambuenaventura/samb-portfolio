@@ -19,8 +19,8 @@ li {
 
 body {
   /* font-family: "Roboto", sans-serif; */
-  font-family: "Roboto Mono", monospace;
-  /* font-family: "Arimo", sans-serif; */
+  /* font-family: "Roboto Mono", monospace; */
+  font-family: "Arimo", sans-serif;
   padding: 0 20rem; /* Adjust the padding value as per your preference */
   background-color: black;
   color: white;
@@ -64,6 +64,9 @@ body {
 .header {
   padding: 4rem 0 4rem 0;
 }
+.header h1,
+h2 {
+}
 .header h2 {
   font-size: 1.4rem;
 }
@@ -73,7 +76,7 @@ body {
   line-height: 1.25;
 }
 .header span {
-  color: rgb(170, 170, 170);
+  color: #aaaaaa;
   font-weight: 500;
 }
 .header a {
@@ -90,7 +93,7 @@ body {
   margin: 3rem 0;
   font-size: 1.1rem;
   line-height: 1.625;
-  color: rgb(170, 170, 170);
+  color: #aaaaaa;
 }
 .flex .flex-text span {
   font-weight: 700;
@@ -100,4 +103,70 @@ body {
   max-width: 100%; /* Set the maximum width to ensure the image fits within the container */
   border-radius: 10%; /* Apply border-radius to make it circular */
   object-fit: cover; /* Ensure the image covers the entire circular area */
+}
+
+#featured h1 {
+  font-size: 3rem;
+}
+.flex-featured {
+  margin-top: 6rem;
+  line-height: 1.75rem;
+  display: flex;
+  width: 100%;
+  align-items: center; /* Add this to vertically center the content */
+  gap: 1rem;
+  justify-content: center;
+}
+
+.flex-featured .featured-content h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.flex-featured .featured-content p {
+  font-size: 1.25rem;
+  color: #aaaaaa;
+}
+
+.flex-featured .techs {
+  display: flex;
+  gap: 1rem;
+}
+.flex-featured .techs p {
+  font-size: 0.9rem;
+  color: #aaaaaa80;
+}
+.flex-featured .link {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 0.85rem;
+}
+
+.flex-featured .link a {
+  display: flex;
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.featured-content {
+  flex: 1; /*flex-grow : 1;    ➜ The div will grow in same proportion as the window-size         */
+}
+.featured-image {
+  width: 25rem;
+  height: 12rem;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.featured-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 2%;
+  object-fit: cover;
+  object-position: top; /* Add this line to ensure the top of the image is visible */
 }
