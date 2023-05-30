@@ -54,6 +54,7 @@ body {
   /* Pay special attention here! */
   position: sticky;
   top: 0px;
+  z-index: 99999;
 }
 .nav-list a {
   color: var(--primary);
@@ -514,5 +515,45 @@ h2 {
   }
   .contact-email a {
     font-size: 0.8rem;
+  }
+}
+
+@media screen and (min-width: 1301px) {
+  /* Animation for scrolling from left */
+  .scroll-animation-left {
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: opacity 1s ease, transform 1s ease;
+  }
+
+  /* Animation for scrolling from right */
+  .scroll-animation-right {
+    opacity: 0;
+    transform: translateX(200px);
+    transition: opacity 1s ease, transform 1s ease;
+  }
+  .scroll-animation-box {
+    opacity: 0;
+    transform: translateY(200px);
+    transition: opacity 1s ease, transform 1s ease;
+  }
+
+  /* DELAY ON SECOND COLUMN BOX*/
+  /* .scroll-animation-box-2 {
+  opacity: 0;
+  transform: translateY(200px);
+  transition: opacity 1s ease 1s, transform 1s ease 1s;
+} */
+
+  /* Add styles to animate the content on scroll */
+  .scroll-animation.animate {
+    opacity: 1;
+    transform: translateX(0);
+    transform: translateY(0);
+  }
+  .scroll-animation2.animate {
+    opacity: 1;
+    transform: translateX(0);
+    transform: translateY(0);
   }
 }
