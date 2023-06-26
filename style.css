@@ -556,4 +556,9 @@ h2 {
     transform: translateX(0);
     transform: translateY(0);
   }
+  .scroll-animation3.animate {
+    opacity: 1;
+    transform: translateX(0);
+    transform: translateY(0);
+  }
 }

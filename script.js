@@ -16,8 +16,10 @@ function isInViewport(element, offset) {
 function revealOnScroll() {
   const elements1 = document.querySelectorAll(".scroll-animation");
   const elements2 = document.querySelectorAll(".scroll-animation2");
+  const elements3 = document.querySelectorAll(".scroll-animation3");
   const offset1 = 100; // Adjust this value to set the desired offset for scroll-animation
   const offset2 = 300; // Adjust this value to set the desired offset for scroll-animation2
+  const offset3 = -300; // Adjust this value to set the desired offset for scroll-animation2
 
   for (let i = 0; i < elements1.length; i++) {
     if (isInViewport(elements1[i], offset1)) {
@@ -28,6 +30,12 @@ function revealOnScroll() {
   for (let i = 0; i < elements2.length; i++) {
     if (isInViewport(elements2[i], offset2)) {
       elements2[i].classList.add("animate");
+    }
+  }
+
+  for (let i = 0; i < elements2.length; i++) {
+    if (isInViewport(elements2[i], offset3)) {
+      elements3[i].classList.add("animate");
     }
   }
 }
