@@ -491,7 +491,7 @@ h2 {
     gap: 0;
   }
 }
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 480px) {
   .item .techs {
     flex-direction: column;
     flex-wrap: wrap;
